@@ -49,3 +49,30 @@ This work is published under [MIT][mit] License.
 [use-template]: https://github.com/cotes2020/chirpy-starter/generate
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+
+
+## How to prepare drafts for posts
+
+Right now, there are two protocols for making drafts:
+
+1. **Pro contributers:** Create a draft using [jekyll-compose](https://github.com/jekyll/jekyll-compose#usage)
+
+    For complete info. Refer [here](https://chirpy.cotes.page/posts/write-a-new-post/)
+
+    TLDR:
+
+    Create your new draft using:
+
+    ```bash
+        $ bundle exec jekyll draft "My new draft"
+    ```
+
+    The draft wiil have the front matter template, please edit them. For further help, see [here](https://chirpy.cotes.page/posts/write-a-new-post/)
+
+2. **Beginner contributors:** Copy the template given in `_drafts/template.md`. Fill in the front matter template as described [here](https://chirpy.cotes.page/posts/write-a-new-post/). Include the content below the front matter. Rename the title and follow the [filename convention](https://chirpy.cotes.page/posts/write-a-new-post/#naming-and-path).
+
+    You also need to update the author(s) details in `_data/authors.yml`
+
+    Once everything looks good. Do a pull request which will be monitored by the admins before publishing.
+
+    **Only drafts are accepted as a pull request as of now**

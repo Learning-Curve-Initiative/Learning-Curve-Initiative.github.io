@@ -13,7 +13,7 @@ baseurl: ""
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: America/New_York
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -117,6 +117,17 @@ pwa:
   enabled: true # the option for PWA feature
 
 paginate: 10
+
+# ------------ Default Front Matter for Drafts and Posts ---------------------------------
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      description:
+      image:
+      category: [TOP_CATEGORIE, SUB_CATEGORIE]
+      tags: [TAG]     # TAG names should always be lowercase
+      authors: [<author1_id>, <author2_id>] # for multiple entries
+      comments: true  # If you want to close the comment : false
 
 # ------------ The following options are not recommended to be modified ------------------
 
